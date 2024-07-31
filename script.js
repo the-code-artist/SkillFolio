@@ -33,17 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
       totalScoreElement.textContent = averageScore;
       averageRatingInput.value = averageScore;
   }
-
-  submitButton.addEventListener('click', () => {
-      
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const averageRating = averageRatingInput.value;
-
-      
-      alert(`Name: ${name}\nEmail: ${email}\nAverage Rating: ${averageRating}`);
-      
-  });
 });
 //move to top button
 // Get the button element
@@ -81,8 +70,4 @@ function scrollToTop() {
 
     // Start the animation
     requestAnimationFrame(scrollStep);
-}
-function fastScrollTo(targetElement) {
-  const startY = window.scrollY;
-  const targetY = targetElement.getBoundingClientRect().top-100 + window.scrollY;
 }
